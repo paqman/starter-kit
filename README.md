@@ -28,3 +28,5 @@ Less defines itself as a "dynamic stylesheet language". It reduce the redundance
 ## Linqjs *v. 2.2.0.2*
 Ultimate framework when you have to deal with set of datas. Allow you to "query" you tabs as with sql. It compiles the methods of the .NET LINQ Framework.
 
+## jQuery *v. 2.0.2*
+Known all around the world, jQuery is a fast, small, and feature-rich JavaScript library.
