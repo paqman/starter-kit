@@ -29,12 +29,15 @@
 
         <!-- Minified JS -->
    <!--     <script src="js/lib/angular.min.js"></script>
-        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>        
 -->
         <!-- Standard JS -->
         <script src="js/lib/angular.js"></script>
+        <script src="js/lib/jquery.js"></script>
         <script src="js/lib/bootstrap.js"></script>
-
+        <script src="js/lib/linq.min.js"></script>
+       
         <!-- Angular Stuff -->
         <script src="js/app.js"></script>
         <script src="js/controller.js"></script>
@@ -46,10 +49,21 @@
 
 
             <div class='row-fluid'>
-                <div class="span4" ng-controller="StartCtrl">{{hello}}</div>
-                <div class="span4"><i class="icon-coffee icon-2x"></i>Font-awesome</div>
-                <div class="span4 less" style="color : white;">Less running ?</div>
+                <div class="span3" ng-controller="StartCtrl">{{hello}}</div>
+                <div class="span3"><i class="icon-android icon-2x"></i> Font-awesome</div>
+                <div class="span3 less" style="color : white;">Less running ?</div>
+                <div class="span3" id="divLinq">LINQ : KO</div>
             </div>
         </div>
+        
+         <script type="text/javascript">
+        	var data = [{c : "O", v : 1},
+        	{c : "l", v : 2},
+        	{c : "K", v : 1}];
+        	var s = Enumerable.From(data).Where("$.v == 1").Select("$.c").ToArray().join("");
+        	document.getElementById('divLinq').innerHTML = "LINQ " + s;
+        </script>
+
+       
     </body>
 </html>
