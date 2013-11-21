@@ -8,11 +8,10 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Replaced linqjs with lodash (http://lodash.com/)
-Removed font-awesome, cause I added bootstrap 3.0
-Still waiting for Angularjs 1.2
+Angularjs released 1.2.1 !!!
+Lo-Dash now 2.3.0
 
-## Angularjs *v. 1.0.7*
+## Angularjs *v. 1.2.1*
 Javascript framework which allow you to build ultra dynamic web applications.
 Powered by google
 
@@ -23,7 +22,7 @@ Powered by twitter
 ## Less *v. 1.5.0*
 Less defines itself as a "dynamic stylesheet language". It reduce the redundance of CSS code and allow you to use functions.
 
-## Lo-Dash *v. 2.2.1*
+## Lo-Dash *v. 2.3.0*
 Great framework when you have to deal with data sets, collection... Allow you to "query" your tabs and extract datas.
 Slightly like the .NET LINQ Framework.
 
