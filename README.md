@@ -1,6 +1,6 @@
 starter-kit
 ===========
-10.22.2013
+11.21.2013
 
 
 Starter kit with angularjs, less and bootstrap
@@ -8,8 +8,20 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Added Grunt to manage distribution.
+Added Grunt to manage distribution. Require nodejs to work properly.
 Bootstrap is now 3.0.2
+
+**Usage**
+```
+npm install
+grunt
+```
+
+**Clean your project**
+```
+grunt clean
+```
+
 
 ## Angularjs *v. 1.2.1*
 Javascript framework which allow you to build ultra dynamic web applications.
