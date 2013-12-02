@@ -1,7 +1,13 @@
 @import "./bootstrap.less"; // include main bootstrap
+@import "./lesshat-prefixed.less"; // include less hat mixins
 
 .less
 {
     display : block;
     background-color : #BADA55;
+}
+
+.less:hover
+{
+ .rotateX(180);
 }
