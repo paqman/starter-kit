@@ -1,6 +1,6 @@
 starter-kit
 ===========
-12.02.2013
+12.09.2013
 
 
 Starter kit including AngularJS, Less, Bootstrap, Lo-Dash, jQuery.
@@ -11,7 +11,7 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Now include Less Hat 2.0, which is a mixin library for Less.
+Updated AngularJS 1.2.4 and lodash 2.4.1.
 
 **Usage**
 ```
@@ -25,7 +25,7 @@ grunt clean
 ```
 
 
-## Angularjs *1.2.3*
+## Angularjs *1.2.4*
 Javascript framework which allow you to build ultra dynamic web applications.
 Powered by google
 
@@ -38,7 +38,7 @@ Less defines itself as a "dynamic stylesheet language". It reduce the redundance
 
 Mixins included : Less Hat 2.0 http://lesshat.com/
 
-## Lo-Dash *2.3.0*
+## Lo-Dash *2.4.1*
 Great framework when you have to deal with data sets, collection... Allow you to "query" your tabs and extract datas.
 Slightly like the .NET LINQ Framework.
 
