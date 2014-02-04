@@ -6,5 +6,10 @@
  */
 
 function StartCtrl($scope) {
-  $scope.hello = "Angular is running.";
+	$scope.show = true;
+	$scope.hello = "Angular is running.";
+
+	$scope.click = function(){
+		$scope.show = !$scope.show;
+	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="starterkit">
     <head>
         <meta charset="utf-8">
         <title>paqman - starter kit</title>
@@ -35,6 +35,7 @@
         <script src="js/lib/jquery.js"></script>
         <script src="js/lib/bootstrap.js"></script>
         <script src="js/lib/lodash.js"></script>
+        <script src="js/lib/angular-animate.js"></script>
        
         <!-- Angular Stuff -->
         <script src="js/app.js"></script>
@@ -47,7 +48,7 @@
 
 
             <div class='row'>
-                <div class="col-xs-4" ng-controller="StartCtrl">{{hello}}</div>
+                <div class="col-xs-4" ng-controller="StartCtrl" ng-show="show" ng-click="click()" >{{hello}}</div>
                 <div class="col-xs-4 less" style="color : white;"><i class="glyphicon glyphicon-play"></i>Less running ?</div>
                 <div class="col-xs-4" id="divLowDash">lodash : KO</div>
             </div>
