@@ -115,6 +115,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Watch changes and execute associated tasks
+    watch : {
+      css : {
+        files : '<%= dirs.css.src %>/stylezZ.less',
+        tasks : ['less'],
+      },
+      scripts : {
+        files : '<%= dirs.js.src %>/*.js',
+        tasks : ['copy', 'concat', 'uglify'],
+      },
+    },
   });
 
   // Load plugins for tasks
@@ -124,6 +135,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-string-replace');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default tasks.
   grunt.registerTask('default', ['copy', 'concat', 'uglify', 'less', 'string-replace']);
