@@ -39,6 +39,10 @@ module.exports = function(grunt) {
           expand : true, flatten : true,
           src : '<%= dirs.font.src %>/*',
           dest : '<%= dirs.font.dist %>/',
+        },{
+          expand : true, flatten : true,
+          src : '<%= dirs.css.src %>/*.png',
+          dest : '<%= dirs.css.dist %>/',
         },]
       }
     },
@@ -84,25 +88,29 @@ module.exports = function(grunt) {
         },
         options: {
           replacements: [
+          { // Less JS
+            pattern: /(<script src="js\/lib\/[a-z0-9-]*)(.js".*\n?<\/script>\n?)/gm,
+            replacement: '$1.min$2'
+          },
           { // Less CSS Stylesheet
             pattern: '<link rel="stylesheet/less" type="text/css" href="less/stylezZ.less" />',
             replacement: '<link rel="stylesheet" type="text/css" href="css/stylezZ.css" />'
           },
           { // Less JS
-            pattern: /<script src=".*less.*js".*<\/script>\n?/gm,
+            pattern: /<script src=".*less.*js".*\n?<\/script>\n?/gm,
             replacement: ''
           },
           { // Every JS who's not a library
-            pattern: /<script src="js\/[a-z]*.js".*<\/script>\n?/gm,
+            pattern: /<script src="js\/[a-z]*.js".*\n?<\/script>\n?/gm,
             replacement: ''
+          },
+          { // Add concatenate JS script link
+            pattern: /(<!-- include-js -->)/gm,
+            replacement: '<script src="js/<%= pkg.name %>.min.js"></script>\n'
           },
           { // Comments
             pattern: /<!--[\s\S\n]*?-->\n?/gm,
             replacement: ''
-          },
-          { // Add concatenate JS script link
-            pattern: /(<\/head>)/gm,
-            replacement: '<script src="js/<%= pkg.name %>.min.js"></script>\n$1'
           }]
         }
       }

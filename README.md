@@ -1,6 +1,6 @@
 starter-kit
 ===========
-05.05.2014
+06.17.2014
 
 
 Starter kit including AngularJS, Less, Bootstrap, Lo-Dash, jQuery, font-awesome.
@@ -11,8 +11,8 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Updated AngularJS 1.2.16, jQuery 2.1.1, Less 1.7.0 and lesshat 3.0.
-Added font-awesome 4.0.3.
+Updated AngularJS 1.2.18 and font-awesome 4.1.0.
+Updated grunt script.
 
 **Usage**
 ```
@@ -26,7 +26,7 @@ grunt clean
 ```
 
 
-## [Angularjs][Angularjs] *1.2.16*
+## [Angularjs][Angularjs] *1.2.18*
 Javascript framework which allow you to build ultra dynamic web applications.
 Powered by google
 
@@ -46,7 +46,7 @@ Slightly like the .NET LINQ Framework.
 ## [jQuery][jquery] *2.1.1*
 Known all around the world, jQuery is a fast, small, and feature-rich JavaScript library.
 
-## [Font-awesome][fontawesome] *4.0.3*
+## [Font-awesome][fontawesome] *4.1.0*
 Vector icons designed for bootstrap.
 
 [Angularjs]: https://angularjs.org/
