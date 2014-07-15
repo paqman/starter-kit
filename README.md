@@ -11,7 +11,7 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Updated AngularJS 1.2.2.
+Updated AngularJS 1.2.20.
 
 **Usage**
 ```
@@ -25,7 +25,7 @@ grunt clean
 ```
 
 
-## [Angularjs][Angularjs] *1.2.18*
+## [Angularjs][Angularjs] *1.2.20*
 Javascript framework which allow you to build ultra dynamic web applications.
 Powered by google
 
