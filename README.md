@@ -1,6 +1,6 @@
 starter-kit
 ===========
-06.17.2014
+07.15.2014
 
 
 Starter kit including AngularJS, Less, Bootstrap, Lo-Dash, jQuery, font-awesome.
@@ -11,8 +11,7 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Updated AngularJS 1.2.18 and font-awesome 4.1.0.
-Updated grunt script.
+Updated AngularJS 1.2.2.
 
 **Usage**
 ```
