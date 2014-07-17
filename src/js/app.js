@@ -1,9 +1,13 @@
-
-var myApp = angular.module('starterkit', ['ngAnimate']);
-
-/*
-config(['$routeProvider', function($routeProvider) {
-$routeProvider.
-        when('/start', {templateUrl: 'partials/start.html', controller: StartCtrl}).
-        otherwise({redirectTo: '/start'});
-*/
+var myApp = angular.module('starterkit', ['ngAnimate', 'ngRoute']).
+config(['$routeProvider', '$httpProvider',
+    function($routeProvider, $httpProvider) {
+        $routeProvider.
+        when('/', {
+            templateUrl: 'views/start.html',
+            controller: StartCtrl
+        }).
+        otherwise({
+            redirectTo: '/'
+        });
+    }
+]);

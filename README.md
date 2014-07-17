@@ -11,7 +11,7 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Updated AngularJS 1.2.20.
+Now use angular-route from scratch and grunt-watch HTML files.
 
 **Usage**
 ```
