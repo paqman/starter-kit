@@ -1,6 +1,6 @@
 starter-kit
 ===========
-07.15.2014
+09.22.2014
 
 
 Starter kit including AngularJS, Less, Bootstrap, Lo-Dash, jQuery, font-awesome.
@@ -11,7 +11,7 @@ Don't forget to adapt wich version you wanna use (minified...) in index.html
 
 
 **Update :**
-Now use angular-route from scratch and grunt-watch HTML files.
+Update to the latest version of angularjs : 1.2.25
 
 **Usage**
 ```
@@ -25,7 +25,7 @@ grunt clean
 ```
 
 
-## [Angularjs][Angularjs] *1.2.20*
+## [Angularjs][Angularjs] *1.2.25*
 Javascript framework which allow you to build ultra dynamic web applications.
 Powered by google
 

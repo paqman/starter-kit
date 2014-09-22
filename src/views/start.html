@@ -3,22 +3,6 @@
     <div class="col-xs-4 less" style="color : white;"><i class="glyphicon glyphicon-play"></i>Less running ?
         <i class="fa fa-building"></i>
     </div>
-    <div class="col-xs-4" id="divLowDash">lodash : KO</div>
+    <div class="col-xs-4" id="divLowDash">{{lodash}}</div>
 </div>
 
-<script type="text/javascript">
-var data = [{
-    c: "O",
-    v: 1
-}, {
-    c: "l",
-    v: 2
-}, {
-    c: "K",
-    v: 1
-}];
-var s = _.map(_.where(data, {
-    v: 1
-}), 'c').join("");
-document.getElementById('divLowDash').innerHTML = "lodash " + s;
-</script>
